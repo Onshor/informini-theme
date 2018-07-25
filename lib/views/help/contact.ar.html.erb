@@ -1,0 +1,82 @@
+<% @title = "إتصل بنا" %>
+
+<%= foi_error_messages_for :contact %>
+
+<h1><%= @title %></h1>
+
+<div id="contact_preamble" class="contact_preamble">
+
+  <h2>إتصل بفريق <%= site_name %> </h2>
+  <% if !flash[:notice] %>
+    <ul>
+      <li>
+‎        الرجاء قراءة  <a href="<%= help_about_path %>">help page</a> أولاً, فقد تجد الإجابة عن سؤالك هناك.
+      </li>
+
+      <li>رأيك يهمنا، لذا لا تتردد فالإتصال بنا عبر هذي الإستمارة أو ارسل بريد إلكتروني إلى  <a
+                            href="mailto:<%=@contact_email%>"><%=@contact_email%></a>
+      </li>
+
+      <li>هذه المنصة <strong>ليست جزءًا من الإدارة</strong> وهي تهدف فقط إلى تسهيل النفاذ إلى المعلومة.</li>
+    </ul>
+  <% end %>
+</div>
+
+<%= form_for :contact do |f| %>
+
+  <% if not @user %>
+    <p>
+      <label class="form_label" for="contact_name">الإسم واللقب:</label>
+      <%= f.text_field :name, :size => 20 %>
+      (or <%= link_to "sign in", signin_path(:r => request.fullpath) %>)
+    </p>
+
+    <p>
+      <label class="form_label" for="contact_email">عنوان البريد الإلكتروني::</label>
+      <%= f.text_field :email, :size => 20 %>
+    </p>
+  <% end %>
+
+  <p>
+    <label class="form_label" for="contact_subject">الموضوع:</label>
+    <%= f.text_field :subject, :size => 50 %>
+  </p>
+
+  <p>
+    <label class="form_label" for="contact_message">نص الرسالة:</label>
+    <%= f.text_area :message, :rows => 10, :cols => 60 %>
+  </p>
+
+  <p style="display:none;">
+    <%= f.label :comment, 'لا تملأ هذا الفراغ' %>
+    <%= f.text_field :comment %>
+  </p>
+
+  <% if !@last_request.nil? %>
+    <p>
+      <label class="form_label" for="contact_message">الرابط إلى طلب النفاذ:</label>
+      <%=request_link(@last_request) %>
+      <%= submit_tag "remove", :name => 'remove' %>
+    </p>
+  <% end %>
+  <% if !@last_body.nil? %>
+    <p>
+      <label class="form_label" for="contact_message">الرابط إلى الهيكل:</label>
+      <%=public_body_link(@last_body) %>
+      <%= submit_tag "remove", :name => 'remove' %>
+    </p>
+  <% end %>
+
+  <p class="form_note">
+‎    لا نستطيع مساعدتك إلا في ما يخص <strong>المشاكل التقنية في المنصة</strong>
+‎    أو الأسئلة عن  النفاذ إلى المعلومة.
+  </p>
+
+
+  <div class="form_button">
+    <%= hidden_field_tag(:submitted_contact_form, 1) %>
+    <%= submit_tag "إرسال", :data => { :disable_with => "يتم الإرسال.." } %>
+    &lt;-- هذه المنصة لفائدتك.
+  </div>
+
+<% end %>

@@ -1,0 +1,34 @@
+<div class="homepage-hero">
+  <div class="row">
+    <div class="homepage-hero-content-wrapper">
+      <div class="hero__intro">
+        <%= render :partial => "new_request" %>
+      </div>
+
+      <div class="intro__browse">
+
+        <a href="#" class="link_hero_intro">
+		<div class="div_hero_intro">
+			<span class="span_hero_intro"><%= number_with_delimiter(@number_of_requests) %></span>
+			<br><%= _("Number of requests") %>
+		</div>
+	</a>
+
+        <a href="#" class="link_hero_intro">
+                <div class="div_hero_intro">
+                        <span class="span_hero_intro"><%= number_with_delimiter(@number_of_authorities) %></span>
+                        <br><%= _("Number of authorities") %>
+                </div>
+        </a>
+
+        <a href="#" class="link_hero_intro">
+                <div class="div_hero_intro">
+                        <span class="span_hero_intro"><%= number_with_delimiter(@user_count) %></span>
+                        <br><%= _("Number of users") %>
+                </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>

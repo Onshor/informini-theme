@@ -1,0 +1,38 @@
+<% @title = "Unhappy about a Freedom of Information request?" %>
+
+
+<% if @info_request %>
+  <h1>Insatisfait de la réponse que vous avez reçue
+    à votre demande '<%=request_link(@info_request) %>'?
+  </h1>
+<% else %>
+  <h1>Vous n'êtes pas satisfait de la réponse que vous avez reçue?</h1>
+<% end %>
+
+<p>Si ...</p>
+
+<ul>
+  <li>Vous n'avez pas reçu de réponse dans les 20 jours ouvrables</li>
+  <li>Vous n'avez pas obtenu toutes les informations que vous avez demandées <strong>ou bien</strong></li>
+  <li>Votre demande a été refusée, mais sans motif valable en vertu de la loi</li>
+</ul>
+
+<p>... vous pouvez</p>
+
+<ol>
+  <li>Demandez une <strong>révision interne </strong> auprès de la structure.</li>
+  <li>Si cela ne vous aide pas, adressez-vous au <strong> Chargé d'accès à l'information </strong>.</li>
+
+</ol>
+
+
+<p><%= site_name %> ne dispose pas de fonctionnalités spéciales pour gérer une requête à ce stade - La ou la requête
+  passe dans le système du chargé d'accès à l'information . Vous pouvez laisser des annotations sur votre
+  demander pour tenir les gens informés des progrès.</p>
+
+
+<ul>
+ 
+  <li>Vous pourriez former un petit groupe de campagne local et organiser une réunion
+    avec le personnel de la structure.</li>
+</ul>

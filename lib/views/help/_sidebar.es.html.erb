@@ -1,0 +1,20 @@
+<div id="right_column_flip">
+    <h2>Ayuda</h2>
+    <ul class="no_bullets">
+        <li><%= link_to_unless_current "Quienes somos", help_about_path %></li>
+        <li><%= link_to_unless_current "Guía para solicitantes", help_requesting_path %></li>
+        <li><%= link_to_unless_current "Tu Privacidad", help_privacy_path %></li>
+        <li><%= link_to_unless_current "Información para Instituciones", help_officers_path %></li>
+        <li><%= link_to_unless_current "Búsqueda avanzada", advanced_search_path %></li>
+        <li><%= link_to_unless_current "Basado en Alaveteli", help_alaveteli_path %></li>
+
+        <li><%= link_to_unless_current "API para programadores", help_api_path %>
+          </li>
+    </ul>
+
+    <h2 id="contact">Contáctanos</h2>
+    <p>Si tu pregunta no está resuelta aquí, o quieres hacernos llegar algún comentario sobre la web,  <a href="/help/contact">contáctanos</a>.
+    </p>
+</div>
+
+
