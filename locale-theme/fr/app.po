@@ -1,0 +1,203 @@
+# Your theme's locale files will override the core locale files.  This
+# is a good place to put both translations specific to your theme, and
+# "translations" of the core English words (e.g. you might want to
+# call FOI "RTI" throughougout, like this:
+#
+# msgid "Make and browse Freedom of Information (FOI) requests"
+# msgstr "Make and browse Right to Know (RTI) requests"
+msgid "Number of users"
+msgstr "Utilisateur(s) enregistré(s)"
+
+msgid "Name"
+msgstr "Nom complet ou votre Dénomination sociale"
+
+msgid "Address"
+msgstr "Adresse ou Siège social"
+
+msgid "Status"
+msgstr "Etat "
+
+msgid "Requestor details"
+msgstr "les mentions obligatoires prévues par l'article N°10 de la loi Organique d'Accès à l'Information"
+
+msgid "Mode de réponse"
+msgstr "Modalité d’accès à l’information"
+
+msgid "Form 1"
+msgstr "La consultation de l’information sur place"
+
+msgid "Form 2"
+msgstr "L’obtention d’une copie papier de l’information"
+
+msgid "Form 3"
+msgstr "L’obtention d’une copie électronique de l’information"
+
+msgid "Form 4"
+msgstr "L’obtention d’extraits de l’information"
+
+msgid "Please enter your status"
+msgstr "Prière d'introduire votre état"
+
+msgid "Please enter your address"
+msgstr "Prière d'introduire votre état"
+
+msgid "Please enter your full name - it is required by law when making a request"
+msgstr "Prière d'introduire votre Nom complet ou votre Dénomination sociale"
+
+msgid "Specify your address"
+msgstr "Prière d'introduire votre Adresse ou votre Siège social"
+
+msgid "Specify your status"
+msgstr "Prière d'introduire votre Etat"
+
+msgid "Dear CAI {{public_body_name}},"
+msgstr "A L'attention de Madame,Monsieur le chargé de l'accès à l'information du {{public_body_name}},"
+
+msgid "Help pages"
+msgstr "Pages d'aide"
+
+msgid "Introduction"
+msgstr "Introduction"
+
+msgid "Making requests"
+msgstr "Envoyer des demandes"
+
+msgid "Your privacy"
+msgstr "Votre vie privée"
+
+msgid "Number of requests"
+msgstr "Demande(s) déposéé(s)"
+
+msgid "Public authorities"
+msgstr "Organismes"
+
+msgid "Search for the requested information"
+msgstr "Chercher l'information demandée"
+
+msgid "Go through the authorities to select one"
+msgstr "Parcourir les autorités pour en sélectionner une"
+
+msgid "Fill out the application form"
+msgstr "Remplir le formulaire de la demande"
+
+msgid "Classify the response"
+msgstr "Classer la response"
+
+msgid "Who is behind this?"
+msgstr "Qui est derrière ca?"
+
+msgid "Number of authorities"
+msgstr "Organisme(s) enregistré(s)"
+
+msgid "FOI officers"
+msgstr "Chargés d'accès à l'information"
+
+msgid "About the software"
+msgstr "A propos de la solution"
+
+msgid "Advanced search"
+msgstr "Recherche avancée"
+
+msgid "Programmers API"
+msgstr "API des programmeurs"
+
+msgid "The Welcome Message"
+msgstr "ﻢﻨﺻّﺓ INFORMINI ﻒﻳ ﻦﺴﺨﺘﻫﺍ ﺎﻠﺣﺎﻠﻳّﺓ ﻪﻳ ﻒﻳ ﻁﻭﺭ ﺎﻠﺘﺟﺮﺑﺓ ﺢﻴﺛ ﺄﻧ ﻢﺨﺘﻠﻓ ﻢﻃﺎﻠﺑ ﺎﻠﻨﻓﺍﺫ ﻻ ﺕﺮﺴﻟ ﻒﻌﻠﻳّﺍ ﺈﻟﻯ ﺎﻠﺠﻫﺎﺗ ﺎﻠﻤﻌﻨﻳّﺓ... ﻑﺎﻨﺘﻇﺭﻭ ﺎﻠﻨﺴﺧﺓ ﺎﻠﻣﻭﺎﻠﻳﺓ"
+
+msgid "Want to know something?"
+msgstr "Voulez-vous savoir quelque chose?"
+
+msgid "Start your own request"
+msgstr "Commencer votre propre Demande"
+
+msgid "Make a request &raquo;"
+msgstr "Faire une demande &raquo;"
+
+msgid "You have the <strong>right</strong> to request information " \
+      "from any publicly-funded body, and get answers. " \
+      "{{site_name}} helps you make a Freedom of Information " \
+      "request. It also publishes all requests online."
+msgstr "Vous avez le <strong>droit</strong> de demander des informations " \
+       "auprès de tout organisme bénéficiant d’un financement public, et d'obtenir des réponses. " \
+       "{{site_name}} vous aide à déposer des demandes d'accès à l'information en ligne. " \
+       "Ainsi, toutes les dmenades et réponses y afférentes sont rendues publiques et accessibles par tous."
+
+msgid "How it works"
+msgstr "Comment cela fonctionne"
+
+msgid "Classify the Response"
+msgstr "Classer les réponses pour qu'elles soient visibles par tous"
+
+msgid "Fill out the application form"
+msgstr "Remplir le formulaire, envoyer-le, puis vérifier votre boite E-mail"
+
+msgid "Go through the authorities to select one"
+msgstr "Parcourir la liste des organismes pour en sélectionner une"
+
+msgid "Search for the requested information"
+msgstr "Rechercher les informations demandées"
+
+msgid "Learn more &rarr;"
+msgstr "Consulter plus &larr;"
+
+msgid "Can't find the one you want?"
+msgstr "Vous n'avez pas trouver l'organisme que vous chercher?"
+
+msgid "<a href=\"{{browse_url}}\">Browse all</a> or <a href=\"{{add_url}}\">ask us to add one</a>."
+msgstr "<a href=\"{{browse_url}}\"> Parcourir tout </a> ou bien<a href=\"{{add_url}}\"> demandez-nous d'en ajouter un </a>."
+
+msgid "First, type in the <strong>name of the public authority</strong> you'd like information from."
+msgstr "Saisissez d'abord le <strong> nom de l'organisme </ strong> auprès duquel vous souhaitez obtenir des informations."
+
+msgid "<strong>By law, they have to respond</strong> (<a href=\"{{url}}\">why?</a>)."
+msgstr "<strong>Selon la loi, ils doivent répondre</strong> (<a href=\"{{url}}\">Voulez vous savoir pourquoi?</a>)."
+
+msgid "e.g. Ministry of Defence"
+msgstr "Exemple : Ministère de l'Industrie et des PME(s)"
+
+msgid "Are we missing a public authority?"
+msgstr "Avons-nous oublié un organisme ?"
+
+msgid "Please create an account or sign in"
+msgstr "Veuillez créer un compte ou bien connectez vous"
+
+msgid "Now check your email!"
+msgstr "Maintenant, vérifiez votre Boite E-mail!"
+
+msgid "We've sent you an email, and you'll need to click the link in it before you can continue."
+msgstr "Nous vous avons envoyé un e-mail et vous devez cliquer sur le lien avant de pouvoir continuer."
+
+msgid "Got an account?"
+msgstr "Vous avez un compte?"
+
+msgid "Create a new account"
+msgstr "Créer un nouveau compte"
+
+msgid "Remember me (keeps you signed in longer; do not use on a public computer)"
+msgstr "Se souvenir de moi (vous permet de rester connecté plus longtemps, ne pas utiliser sur un ordinateur public)"
+
+msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
+msgstr "Votre <strong>nom apparaîtra publiquement</ strong> sur ce site Web et dans les moteurs de recherche (<a href=\"{{why_url}}\">Voulez-vous savoir pourquoi</a>). Si vous pensez à utiliser un pseudo veuillez <a href=\"{{help_url}}\">lire ça</a>!"
+
+msgid "{{count}} request"
+msgid_plural "{{count}} requests"
+msgstr[0] "{{count}} aucune demande d'accès à l'information"
+msgstr[1] "{{count}} une seule demande d'accès à l'information"
+
+msgid "Change your Personal data on {{site_name}}"
+msgstr "Mettre à jour mes informations personnelles sur {{site_name}}"
+
+msgid "Update"
+msgstr "Mettre à jour"
+
+msgid "Your data was successfully updated"
+msgstr "Vos données ont été mises à jour avec succès"
+
+msgid "Address :"
+msgstr "Adresse :"
+
+msgid "Status :"
+msgstr "Etat :"
+
+msgid "Change your personnal data"
+msgstr "Modifier vos données personnelles - les mentions obligatoires prévues à l'article 10"
