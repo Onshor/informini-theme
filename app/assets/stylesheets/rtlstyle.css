@@ -2205,7 +2205,7 @@ dd{
 }
 
 #request_header{
-    border-color: rgba(0, 0.1) 0, 0, ;
+    border-color: rgba(0, 0, 0, 0.1) ;
 }
 
 #request_header #request_header_body, #request_header #typeahead_response{
