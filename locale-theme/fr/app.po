@@ -5,8 +5,35 @@
 #
 # msgid "Make and browse Freedom of Information (FOI) requests"
 # msgstr "Make and browse Right to Know (RTI) requests"
+msgid "Sent"
+msgstr "Envoi "
+
+msgid "Make and browse Freedom of Information (FOI) requests"
+msgstr "Accès à l'information en Tunisie"
+
+msgid "is a platform for filing online requests for access to information in Tunisia. All requests and answers are made public."
+msgstr "est une plateforme pour déposer en ligne des demandes d'accès à l'information en Tunisie. Toutes les demandes et réponses sont rendues publiques."
+
+msgid "request"
+msgstr "de la demande d'accès à l'infrmation"
+
+msgid "a follow up"
+msgstr "de la demande de suivi"
+
+msgid "unknown message_type"
+msgstr ""
+
+msgid "to"
+msgstr "à"
+
+msgid "again"
+msgstr "encore une fois"
+
+msgid ", using a new contact address"
+msgstr "en se basant sur la nouvelle adresse Email"
+
 msgid "Number of users"
-msgstr "Utilisateur(s) enregistré(s)"
+msgstr "Utilisateurs enregistrés"
 
 msgid "Name"
 msgstr "Nom complet ou votre Dénomination sociale"
@@ -15,7 +42,25 @@ msgid "Address"
 msgstr "Adresse ou Siège social"
 
 msgid "Status"
-msgstr "Etat "
+msgstr "Statut"
+
+msgid "Your status:"
+msgstr "Votre statut:"
+
+msgid "Your address will be anonymised"
+msgstr "Votre adresse <b>n’apparaîtra qu’au chargé d’accès à l’information</b> au moment de l’envoi de la demande. Elle ne sera pas accessible sur ce <b>site Web</b> ni dans <b>les moteurs de recherche</b>."
+
+msgid "Please confirm that you have read the <a href="{{terms_url}}">Terms of Use</a> and <a href="{{privacy_url}}">Privacy Policy</a>."
+msgstr "Veuillez confirmer que vous avez lu les <a href="/fr/help/terms_of_use"> Conditions d'utilisation </a> et la <a href="/fr/help/privacy_policy"> Politique de confidentialité </a>."
+
+msgid "Personne morale"
+msgstr "Personne morale"
+
+msgid "Personne physique"
+msgstr "Personne physique"
+
+msgid "Your address:"
+msgstr "Votre adresse ou Siège social"
 
 msgid "Requestor details"
 msgstr "les mentions obligatoires prévues par l'article N°10 de la loi Organique d'Accès à l'Information"
@@ -66,7 +111,7 @@ msgid "Your privacy"
 msgstr "Votre vie privée"
 
 msgid "Number of requests"
-msgstr "Demande(s) déposéé(s)"
+msgstr "Demandes déposéés"
 
 msgid "Public authorities"
 msgstr "Organismes"
@@ -87,7 +132,7 @@ msgid "Who is behind this?"
 msgstr "Qui est derrière ca?"
 
 msgid "Number of authorities"
-msgstr "Organisme(s) enregistré(s)"
+msgstr "Organismes enregistrés"
 
 msgid "FOI officers"
 msgstr "Chargés d'accès à l'information"
@@ -102,7 +147,7 @@ msgid "Programmers API"
 msgstr "API des programmeurs"
 
 msgid "The Welcome Message"
-msgstr "ﻢﻨﺻّﺓ INFORMINI ﻒﻳ ﻦﺴﺨﺘﻫﺍ ﺎﻠﺣﺎﻠﻳّﺓ ﻪﻳ ﻒﻳ ﻁﻭﺭ ﺎﻠﺘﺟﺮﺑﺓ ﺢﻴﺛ ﺄﻧ ﻢﺨﺘﻠﻓ ﻢﻃﺎﻠﺑ ﺎﻠﻨﻓﺍﺫ ﻻ ﺕﺮﺴﻟ ﻒﻌﻠﻳّﺍ ﺈﻟﻯ ﺎﻠﺠﻫﺎﺗ ﺎﻠﻤﻌﻨﻳّﺓ... ﻑﺎﻨﺘﻇﺭﻭ ﺎﻠﻨﺴﺧﺓ ﺎﻠﻣﻭﺎﻠﻳﺓ"
+msgstr "Merci pour votre visite ... N'hésitez pas à soumettre une demande d'accès à information."
 
 msgid "Want to know something?"
 msgstr "Voulez-vous savoir quelque chose?"
@@ -177,7 +222,7 @@ msgid "Remember me (keeps you signed in longer; do not use on a public computer)
 msgstr "Se souvenir de moi (vous permet de rester connecté plus longtemps, ne pas utiliser sur un ordinateur public)"
 
 msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
-msgstr "Votre <strong>nom apparaîtra publiquement</ strong> sur ce site Web et dans les moteurs de recherche (<a href=\"{{why_url}}\">Voulez-vous savoir pourquoi</a>). Si vous pensez à utiliser un pseudo veuillez <a href=\"{{help_url}}\">lire ça</a>!"
+msgstr "Votre <strong>nom apparaîtra publiquement</strong> sur ce site Web et dans les moteurs de recherche (<a href=\"{{why_url}}\">Voulez-vous savoir pourquoi</a>). Si vous pensez à utiliser un pseudo veuillez <a href=\"{{help_url}}\">lire ça</a>!"
 
 msgid "{{count}} request"
 msgid_plural "{{count}} requests"

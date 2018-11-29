@@ -27,7 +27,10 @@
       <label class="form_label" for="user_signup_user_address"> <%= _('Your address:') %></label>
       <%= text_field 'user_signup', 'address_line', { :size => 20, :tabindex => 15, :autocomplete => "off" } %>
     </p>
-
+    
+    <div class="form_item_note">
+      <%= _('Your address will be anonymised') %>
+    </div>
   
     <p>
       <label class="form_label" for="user_signup_email"><%= _('Your e-mail:') %></label>

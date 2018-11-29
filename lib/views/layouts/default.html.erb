@@ -2,6 +2,7 @@
 <html lang="<%= AlaveteliLocalization.html_lang %>" class="no-js">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="cleartype" content="on">
     <%= csrf_meta_tags %>
 
     <title>
@@ -11,6 +12,8 @@
         <%= site_name %> - <%= _('Make and browse Freedom of Information (FOI) requests') %>
       <% end %>
     </title>
+        
+    <meta name="description" content="<%= site_name %> - <%= _('is a platform for filing online requests for access to information in Tunisia. All requests and answers are made public.') %>" />
 
     <%= render :partial => 'layouts/favicon' %>
 

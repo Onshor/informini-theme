@@ -6,14 +6,44 @@
 # msgid "Make and browse Freedom of Information (FOI) requests"
 # msgstr "Make and browse Right to Know (RTI) requests"
 
+msgid "Sent"
+msgstr "تمّ إرسال"
+
+msgid "Make and browse Freedom of Information (FOI) requests"
+msgstr "النفاذ إلى المعلومة في تونس"
+
+msgid "is a platform for filing online requests for access to information in Tunisia. All requests and answers are made public."
+msgstr "هي منصة لتقديم مطالب عبر الإنترنت للنفاذ إلى المعلومة في تونس. جميع المطالب والأجوبة يتم نشرها بصفة آليّة."
+
+msgid "request"
+msgstr "مطلب النفاذ هذا"
+
+msgid "a follow up"
+msgstr "متابعة"
+
+msgid "unknown message_type"
+msgstr ""
+
+msgid "to"
+msgstr "إلى"
+
+msgid "again"
+msgstr "مرّة أخرى"
+
+msgid ", using a new contact address"
+msgstr "بالإعتماد على عنوان البريد الالكتروني الجديد"
+
 msgid "Name"
 msgstr "الإسم أو التسمية الإجتماعيّة"
 
 msgid "Address"
-msgstr "العنوان أو المقّر الإجتماعي"
+msgstr "العنوان"
 
 msgid "Status"
 msgstr "الصفة "
+
+msgid "Your address will be anonimysed"
+msgstr "لن يظهر هذا العنوان <strong> إلا للمكلّف بالنفاذ إلى المعلومة </strong> عند إرسال المطلب. في أيّ حال من الأحوال <strong> لن يكون متاحًا على هذا الموقع أو حتّى محركات البحث. </strong>"
 
 msgid "Requestor details"
 msgstr "التنصيصات الوجوبية الواردة بالفصل عدد 10  من قانون النفاذ إلى المعلومة"
@@ -151,7 +181,7 @@ msgid "Programmers API"
 msgstr "API للمبرمجين"
 
 msgid "The Welcome Message"
-msgstr "ﻢﻨﺻّة INFORMINI في نسختها الحاليّة هي في طور التجربة حيث أن مختلف مطالب النفاذ لا ترسل فعليّا إلى الجهات المعنيّة... فانتظرو النسخة الموالية"
+msgstr "شكرا لزيارتك لهذا الموقع ... لا تترذّد في لإرسال مطل النفاذ إلى المعلومة الخاص بك"
 
 msgid "Want to know something?"
 msgstr "هل تريد الحصول على معلومة"
