@@ -1,18 +1,9 @@
-<% if @highlight_words.nil?
-     @highlight_words = []
-end %>
+<% @highlight_words = [] if @highlight_words.nil? %>
 
 <div class="request_listing">
   <div class="request_left">
     <span dir="auto" class="head">
-      <%
-        path =
-          if @play_urls
-            categorise_request_path(:url_title => info_request.url_title)
-          else
-            request_path(info_request)
-          end
-      %>
+      <% path = @play_urls ? categorise_request_path(:url_title => info_request.url_title) : request_path(info_request) %>
       <%= link_to highlight_words(info_request.title, @highlight_words), path %>
     </span>
 

@@ -1,8 +1,5 @@
 <%
-  if @highlight_words.nil?
-    @highlight_words = []
-  end
-
+  @highlight_words = [] if @highlight_words.nil?
   request_link = false unless defined?(request_link)
 %>
 

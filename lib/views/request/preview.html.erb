@@ -35,42 +35,52 @@
             <% else %>
               <%=h(@info_request.public_body.name)%>
             <% end %>
-
           </p>
+
           <p class="preview_subject">
             <strong><%= _('Subject') %></strong> <%= @info_request.email_subject_request %>
           </p>
 
           <div class="correspondence_text">
             <p><%= @outgoing_message.get_body_for_html_display %></p>
-      <p> 
-         <h5> <%= _("Mode de réponse") %> </h5>
-         <table border="0" width="100%">
-            <tr>
-                <td class="border-mode-reception">&nbsp;</td><td>&nbsp;<%= _("Form 1") %></td><td class="border-mode-reception">&nbsp;</td><td>&nbsp;<%= _("Form 2") %></td>
-            </tr><tr>
-                <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-            </tr><tr>
-                <td class="border-mode-reception">X</td><td>&nbsp;<%= _("Form 3") %></td><td class="border-mode-reception">&nbsp;</td><td>&nbsp;<%= _("Form 4") %></td>
-            </tr>
-         </table>
-     </p>
- 
 
+            <p>
+              <h5><%= _("Mode de réponse") %></h5>
+              <table border="0" width="100%">
+                <tr>
+                  <td class="border-mode-reception">&nbsp;</td>
+                  <td>&nbsp;<%= _("Form 1") %></td>
+                  <td class="border-mode-reception">&nbsp;</td>
+                  <td>&nbsp;<%= _("Form 2") %></td>
+                </tr>
+
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                  <td class="border-mode-reception">X</td>
+                  <td>&nbsp;<%= _("Form 3") %></td>
+                  <td class="border-mode-reception">&nbsp;</td>
+                  <td>&nbsp;<%= _("Form 4") %></td>
+                </tr>
+              </table>
+            </p>
 
             <%= o.hidden_field(:body) %>
-
           </div>
 
           <p class="event_actions"></p>
         </div>
-
       <% end %>
 
       <% if @render_recaptcha %>
-      <p>
-        <%= recaptcha_tags %>
-      </p>
+        <p>
+          <%= recaptcha_tags %>
+        </p>
       <% end %>
 
       <p>

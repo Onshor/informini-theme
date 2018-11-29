@@ -1,11 +1,11 @@
 $main_menu-mobile_menu_cutoff: 58em;
 $row-width: 84em;
-$body-font-family: 'Montserrat', Arial, Helvetica, Helmet, Freesans, sans-serif;
+$body-font-family: 'Droid Arabic Naskh', Helvetica, sans-serif, Helmet, Freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $base-font-size: 16px;
 
 // Specify the filename and dimensions of your logo file here
 $logo-filename: 'logo.png';
-$logo-highdpi-filename: 'logo@2.png'; //Should be at least 2x the size, in the same proportions
+$logo-highdpi-filename: 'logo@2.png'; // Should be at least 2x the size, in the same proportions
 $logo-width: 275px;
 $logo-height: 44px;
 
@@ -37,7 +37,7 @@ $body-bg: $color_neutral_light;
 $body-font-color: $color_neutral_dark;
 $link-color: darken($color_blue, 20%);
 $action-color: $color_light_blue;
-$font-family: "Montserrat", Helvetica, Arial, sans-serif;
+$font-family: 'Droid Arabic Naskh', Helvetica, sans-serif, Helmet, Freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $form_input-bg: $color_white;
 $form-label-font-color: $color_black;
 

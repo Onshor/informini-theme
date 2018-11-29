@@ -2,12 +2,11 @@
   <%= form_tag(signup_path, {:id => "signup_form"}) do %>
     <%= foi_error_messages_for :user_signup %>
 
-<p>
-    <label class="form_label" for="user_signup_user_status"> <%= _('Your status:') %></label>
-    <%= radio_button 'user_signup', 'status_flag', 'PM' %> <%= _('Personne morale') %>  &nbsp;&nbsp;&nbsp;&nbsp;
-    <%= radio_button 'user_signup', 'status_flag', 'PP' %> <%= _('Personne physique') %>
-    
-</p>
+    <p>
+      <label class="form_label" for="user_signup_user_status"> <%= _('Your status:') %></label>
+      <%= radio_button 'user_signup', 'status_flag', 'PM' %> <%= _('Personne morale') %>  &nbsp;&nbsp;&nbsp;&nbsp;
+      <%= radio_button 'user_signup', 'status_flag', 'PP' %> <%= _('Personne physique') %>
+    </p>
 
     <p>
       <label class="form_label" for="user_signup_name"> <%= _('Your name:') %></label>
@@ -27,11 +26,11 @@
       <label class="form_label" for="user_signup_user_address"> <%= _('Your address:') %></label>
       <%= text_field 'user_signup', 'address_line', { :size => 20, :tabindex => 15, :autocomplete => "off" } %>
     </p>
-    
+
     <div class="form_item_note">
       <%= _('Your address will be anonymised') %>
     </div>
-  
+
     <p>
       <label class="form_label" for="user_signup_email"><%= _('Your e-mail:') %></label>
       <%= text_field 'user_signup', 'email', { :size => 20, :tabindex => 20 } %>
@@ -58,10 +57,11 @@
         <%= _('Please confirm that you have read the <a href="{{terms_url}}">Terms of Use</a> and <a href="{{privacy_url}}">Privacy Policy</a>.',
                   :terms_url => help_general_path(:action => 'terms_of_use'),
                   :privacy_url => help_general_path(:action => 'privacy_policy')) %>
-
     </p>
-    
+
     <%= recaptcha_tags %>
+
+    <br>
 
     <div class="form_button">
       <%= hidden_field_tag 'token', params[:token], {:id => 'signup_token' } %>

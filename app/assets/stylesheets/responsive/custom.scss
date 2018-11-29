@@ -105,16 +105,16 @@ form input[type="email"],
 form input[type="url"],
 form input[type="tel"],
 form input[type="number"] {
-    border-radius: 0;
-    background-color: $form_input-bg;
-    /* Set a fixed height for text inputs in older IE 8 */
-    @include ie8 {
-        height: 2.3125em;
-    }
-    /* Do the same in px for IE < 7 */
-    @include lte-ie7 {
-        height: 22px;
-    }
+  border-radius: 0;
+  background-color: $form_input-bg;
+  /* Set a fixed height for text inputs in older IE 8 */
+  @include ie8 {
+    height: 2.3125em;
+  }
+  /* Do the same in px for IE < 7 */
+  @include lte-ie7 {
+    height: 22px;
+  }
 }
 
 input.use-datepicker[type=text] {
@@ -210,7 +210,6 @@ a.link_button_green_large {
 
 
 /* Action Bar Mixins */
-
 @mixin follow-button {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -231,7 +230,6 @@ a.link_button_green_large {
 }
 
 /* Popups */
-
 .popup {
   background-color: desaturate(lighten($notice-color, 30%),10%);
   border: 3px solid $notice-color;
@@ -239,7 +237,6 @@ a.link_button_green_large {
 
 
 /* Header */
-
 .topnav {
   background-color: $topnav_bg;
   @media( min-width: $main_menu-mobile_menu_cutoff ) {
@@ -309,8 +306,8 @@ a.link_button_green_large {
 .greeting {
   color: $body-bg;
 }
-/* Notices, errors */
 
+/* Notices, errors */
 #notice, #error, .errorExplanation, #request_header_text, #hidden_request, .describe_state_form form, .undescribed_requests, .warning {
   border-top: 10px solid;
   font-size: 1em;
@@ -653,7 +650,6 @@ a.link_to_this {
 }
 
 /* Attachments*/
-
 .view_html_prefix {
   font-family: $font-family;
   background-color: $color_primary;
@@ -683,7 +679,6 @@ a.link_to_this {
 }
 
 /* Help pages */
-
 dt {
   font-weight: 700;
   @include respond-min( $main_menu-mobile_menu_cutoff ) {
@@ -747,18 +742,18 @@ dt {
 }
 
 .steps__step-number {
-  height: 3.5em;
-  width: 3.5em;
-  background-color: $color_primary;
-  box-shadow: 0 1px 2px transparentize($color_black, 0.75);
-  padding: 1em;
+  height: 2.2em;
+  width: 2.2em;
+  background-color: #F3F1EB;
+  box-shadow: 0 1px 2px #B4B4B4;
+  padding: 0.4em;
   border-radius: 100%;
-  color: $color_white;
-  @include respond-min( $main_menu-mobile_menu_cutoff ) {
-    left: 50%;
-    margin-left: -1.75em;
-    bottom: -1em;
-    top: auto;
+  color: $color_primary;
+  left: 25%;
+  top: 10.5em;
+
+  p {
+    font-size: 17px;
   }
 }
 
@@ -827,6 +822,28 @@ dt {
     background-image: image-url('homepage-background.jpg');
   }
 
+  @media (max-width: 1000px) {
+    height: 600px;
+
+    .hero__intro, .intro__browse {
+      float: none;
+      text-align: center;
+      display: block;
+    }
+
+    .intro__browse {
+      margin-top: 50px;
+
+      .div_hero_intro {
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  .intro__browse .div_hero_intro .span_hero_intro {
+    font-size: 1.7em;
+  }
+
   a {
     color: $color_secondary;
     &:hover,
@@ -859,12 +876,13 @@ dt {
       color: $color_white;
     }
   }
+
   .new-request__make-new-requests {
     @include button-base;
     background-color: $color_secondary;
     color: $color_white;
     border-radius: 25px;
-    padding: 18px 50px;
+    padding: 13px 34px;
     font-size: 18px;
     margin-top: 15px;
   }
@@ -900,6 +918,6 @@ dt {
 .track-request-action {
   margin-top: 0;
   width: 100%;
-  margin-left: 0px !important; 
+  margin-left: 0px !important;
   margin-bottom: 4.5px !important;
 }

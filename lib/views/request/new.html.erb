@@ -32,13 +32,11 @@
       });
     </script>
   <% end %>
-<% end %>
 
-<% if @batch %>
+  <% @title = _("Make an {{law_used_short}} request to '{{public_body_name}}'",:law_used_short=>h(@info_request.law_used_human(:short)),:public_body_name=>h(@info_request.public_body.name))  %>
+<% else %>
   <% @title = _("Make an {{law_used_short}} request",
                 :law_used_short => h(@info_request.law_used_human(:short))) %>
-<% else %>
-  <% @title = _("Make an {{law_used_short}} request to '{{public_body_name}}'",:law_used_short=>h(@info_request.law_used_human(:short)),:public_body_name=>h(@info_request.public_body.name))  %>
 <% end %>
 
 <% if @user and @user.errors.any? %>
@@ -106,16 +104,13 @@
           <span class="to_public_body_label"><%= _('To') %></span>
           <%= h(@info_request.public_body.name) %>
         </p>
-      <% end %>
 
-      <% unless @batch %>
         <% if @info_request.public_body.has_notes? %>
           <div id="request_header_text" class="request_header_text">
             <p><%= @info_request.public_body.notes_as_html.html_safe %></p>
           </div>
         <% end %>
       <% end %>
-
     </div>
   </div>
 
@@ -228,17 +223,30 @@
       <% end %>
 
       <table border="0" width="100%">
-	<tr>
-		<td class="border-mode-reception">&nbsp;</td><td><%= _("Form 1") %></td><td class="border-mode-reception">&nbsp;</td><td><%= _("Form 2") %></td>
-        </tr>
         <tr>
-		<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-	</tr>
-	<tr>
-		<td class="border-mode-reception">X</td><td><%= _("Form 3") %></td><td class="border-mode-reception">&nbsp;</td><td><%= _("Form 4") %></td>
-	</tr>
+		      <td class="border-mode-reception">&nbsp;</td>
+          <td><%= _("Form 1") %></td>
+          <td class="border-mode-reception">&nbsp;</td>
+          <td><%= _("Form 2") %></td>
+        </tr>
+
+        <tr>
+      		<td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+	      </tr>
+
+        <tr>
+		      <td class="border-mode-reception">X</td>
+          <td><%= _("Form 3") %></td>
+          <td class="border-mode-reception">&nbsp;</td>
+          <td><%= _("Form 4") %></td>
+        </tr>
       </table>
-      <br />
+
+      <br>
+
       <div class="form_button">
         <% if @batch %>
           <% params[:public_body_ids].each do |public_body_id| %>
@@ -255,10 +263,10 @@
       <% if !@info_request.tag_string.empty? %>
         <p class="form_note">
           <!-- <label class="form_label" for="info_request_tag_string"><%= _("Tags (separated by a space):") %></label>
-            <%= f.text_field :tag_string, :size => 50 %> -->
+          <%= f.text_field :tag_string, :size => 50 %> -->
 
-            <%= f.hidden_field(:tag_string) %>
-            <strong>Tags:</strong> <%=h @info_request.tag_string %>
+          <%= f.hidden_field(:tag_string) %>
+          <strong>Tags:</strong> <%=h @info_request.tag_string %>
         </p>
       <% end %>
     </div>

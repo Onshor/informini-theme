@@ -13,7 +13,6 @@
     <%= stylesheet_link_tag 'fancybox.css', :rel => "stylesheet"  %>
   <% end %>
 <% end %>
-  <%= stylesheet_link_tag 'customStyle' %>
-  <% if I18n.locale == :ar %>
-    <%= stylesheet_link_tag 'rtlstyle' %>
-  <% end %>
+
+<%= stylesheet_link_tag 'customStyle' %>
+<%= stylesheet_link_tag 'rtlstyle' if I18n.locale == :ar %>

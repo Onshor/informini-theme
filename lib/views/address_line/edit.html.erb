@@ -13,15 +13,15 @@
       <%= f.label :name, _('Your name:'), :class => 'form_label' %>
       <%= f.text_field :name, :size => 20, :value => @user.name,  :placeholder => 'your name' %>
     </p>
-	
+
     <p>
       <%= f.label :address_line, _('Your address:'), :class => 'form_label' %>
       <%= f.text_area :address_line, :rows => 5, :cols => 55, :value => @user.address_line,  :placeholder => 'your address' %>
     </p>
 
     <p>
-       <%= f.label :status_flag, _('Your status:'), :class => 'form_label' %>
-       <%= f.select :status_flag, [[_('Personne morale'), 'PM'], [_('Personne physique'), 'PP']] %>
+      <%= f.label :status_flag, _('Your status:'), :class => 'form_label' %>
+      <%= f.select :status_flag, [[_('Personne morale'), 'PM'], [_('Personne physique'), 'PP']] %>
     </p>
 
     <div class="form_button">

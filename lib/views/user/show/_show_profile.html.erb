@@ -20,7 +20,7 @@
 
   <div id="header_left" class="header_left">
     <h1><%= h(@display_user.name) + (@is_you ? _(" (you)") : "") %></h1>
-    
+
     <p id="user_photo_on_profile" class="user_photo_on_profile">
       <% if @display_user.profile_photo %>
         <% if @is_you %>
@@ -43,25 +43,29 @@
     </p>
 
     <% if @user %>
-    <p><b><%= _('Address :') %></b>
-       <% if @display_user.address_line %> 
-            <%= h(@display_user.address_line) %>
-       <% else %>
-            <%= link_to _("Specify your address"), user_edit_address_line_path, :class => "link_button_red" %> 
-       <% end %>
-    </p>
+      <p>
+        <b><%= _('Address :') %></b>
+        <% if @display_user.address_line %>
+          <%= h(@display_user.address_line) %>
+        <% else %>
+          <%= link_to _("Specify your address"), user_edit_address_line_path, :class => "link_button_red" %>
+        <% end %>
+      </p>
     <% end %>
-    <p><b><%= _('Status :') %></b>
-       <% if @display_user.status_flag == 'PM' %>
-            <%= _('Personne morale') %> 
-       <% elsif @display_user.status_flag == 'PP' %>
-            <%= _('Personne physique') %>
-       <% elsif @user  %>   
-            <%= link_to _("Specify your status"), user_edit_address_line_path, :class => "link_button_red" %>
-       <% else %>
-            .....
-       <% end %>
+
+    <p>
+      <b><%= _('Status :') %></b>
+      <% if @display_user.status_flag == 'PM' %>
+        <%= _('Personne morale') %>
+      <% elsif @display_user.status_flag == 'PP' %>
+        <%= _('Personne physique') %>
+      <% elsif @user  %>
+        <%= link_to _("Specify your status"), user_edit_address_line_path, :class => "link_button_red" %>
+      <% else %>
+        .....
+      <% end %>
     </p>
+
     <p class="subtitle">
       <%= _('Joined {{site_name}} in {{year}}',
             :site_name => site_name,

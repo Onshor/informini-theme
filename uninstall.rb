@@ -25,5 +25,4 @@ if ENV['REMOVE_MIGRATIONS']
     require File.expand_path migration_file_path, __FILE__
     AddStatusFlagToUser.down
   end
-    
 end

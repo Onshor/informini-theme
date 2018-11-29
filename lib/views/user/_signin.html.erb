@@ -25,8 +25,8 @@
     </p>
 
     <div class="form_button">
-      <%= hidden_field_tag 'token', params[:token], {:id => 'signin_token' } %>
-      <%= hidden_field_tag :modal, params[:modal], {:id => 'signin_modal' } %>
+      <%= hidden_field_tag 'token', params[:token], { :id => 'signin_token' } %>
+      <%= hidden_field_tag :modal, params[:modal], { :id => 'signin_modal' } %>
       <%= submit_tag _('Sign in'), :tabindex => 100 %>
     </div>
   <% end %>
