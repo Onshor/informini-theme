@@ -10,6 +10,15 @@ body {
   float: left !important;
 }
 
+#search_form input[type="submit"] {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-right: -5px;
+  margin-left: 0px;
+}
+
 select {
   background-position: 0% center;
 }

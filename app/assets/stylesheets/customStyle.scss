@@ -23,14 +23,7 @@
   src: url(fonts/HacenTunisiaLt?#iefix) format("embedded-opentype"), url(fonts/HacenTunisiaLt.woff) format("woff"), url(fonts/HacenTunisiaLt.ttf) format("truetype"), url(fonts/HacenTunisiaLt.svg#svgFontName) format("svg");
 }
 
-.request_listing, .body_listing, .user_listing {
-  border: 1px solid #dcdcdc;
-  padding: 15px;
-  margin: 25px;
-  box-shadow: 2px 3px 10px #d2d2d2;
-}
-
-.request_listing .request_right{
+.request_listing .request_right {
   border-left: 1px solid #d9e0e6;
 }
 
@@ -56,9 +49,22 @@
   margin: 0.9375rem;
 }
 
-#right_half {
-  border: 1px solid #00428140;
-  background-color: #0056a614;
+#help_about #right_column_flip, #right_half, .request_listing, .body_listing, .user_listing {
+  border: 1px solid #FFFFFF;
+  box-shadow: 2px 3px 10px #d2d2d2;
+  margin-bottom: 25px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+#help_about #right_column_flip {
+  margin-top: 35px;
+  padding: 10px 30px;
+}
+
+.request_listing, .body_listing, .user_listing {
+  margin: 25px;
 }
 
 .latest-requests .button-secondary, .learn-more-foi a {
@@ -102,7 +108,7 @@ a:link, a:visited {
   color: #ffffff !important;
 }
 
-#select_authority_help{
+#select_authority_help {
   background-color: #e8e6ea;
   border: 1px solid #ccc;
 }
@@ -111,11 +117,20 @@ form input[type=submit], a.link_button_green, a.link_button_green_large {
   color : #ffffff !important;
 }
 
-#authority_selection{
-  padding:1em;
+#search_form input[type="submit"] {
+  padding: 0.12em 1.25em;
+  margin-left: -5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 37px;
+  padding: 0px 1em;
 }
 
-.navigation .logged-in-menu a, .navigation .logged-in-menu__signout-link a{
+#authority_selection {
+  padding: 1em;
+}
+
+.navigation .logged-in-menu a, .navigation .logged-in-menu__signout-link a {
   color: #010e1b !important;
 }
 
